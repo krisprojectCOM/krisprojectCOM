@@ -1,0 +1,1507 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Kris Kosta</title>  
+<style>
+
+  html {
+  scroll-behavior: smooth;
+}
+
+  body{background: black; overflow-x: hidden;  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+//background: #0f1317;
+    //background: linear-gradient(black, #0f1317, #2b2c30, #2b2c30, #2b2c30, #2b2c30); 
+    background: linear-gradient(black, #0f1317, #0d141e, #0d141e, #0d141e, #0d141e); 
+  background: black;
+}
+
+#particles-js{position: absolute; width: 100vw; height: 400px;}
+
+/* Header Elements */
+  
+.header-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+    margin-top: 80px;
+  color: white;
+  margin-bottom: -50px;
+}
+
+header2, header1{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-size: 3em;
+    user-select: none;
+    font-family: sans-serif;
+    font-weight: 700;
+  text-align: left;
+  margin-left: 10vw; 
+}
+
+
+header1{font-size: 5em;
+margin-bottom: 0px;
+text-decoration: underline;}
+
+header3{
+  margin-top: 0px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 350;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  user-select: none;
+  margin-left: 10vw;
+  text-align: left;
+
+}
+
+#section-title{margin-left: 120px; margin-top: 40px; color: white;}
+/* ______________________________________*/
+/*-------------Articles-------------  */
+
+/*---------skills---------  */
+.skills-article, .project-article{
+margin: 10vw; margin-top: 0px; margin-bottom: 0px; height: cover;  user-select: none; z-index: 3;
+}
+
+.project-article{margin: 0px; padding: 0px;}
+
+.skills-article > h1{text-align: center;
+  padding-top: 20px; font-family: 'roboto'; font-weight: bolder;}
+
+.skill-box{display: flex; flex-wrap: wrap; width: 100%; height: cover;}
+
+.skill-item{font-size: 18px; color: white; background: black; margin-left: 10px; padding: 10px; font-weight: bold; height: 20px; width: auto; margin-bottom: 10px; box-shadow: 0 0px 10px rgba(0, 0, 0,0.5); border-radius: 5px; }
+
+.skill-item:hover{ box-shadow: 0 0px 20px rgba(0, 0, 0,11.5); transform: scale(1.1);}
+
+/* new skill item */
+.skill-item{transition: all 0.2s;}
+.skill-item:hover{ box-shadow: 0 0px 20px rgba(0, 0, 0,11.5); transform: scale(1.1);
+  
+transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); transform-style: preserve-3d;
+  
+}
+
+.project-p-wrapper > p{}
+
+#skill-p{box-shadow: 0 0px 10px rgba(0, 0, 0,11.5);
+  border-radius: 25px;
+  padding: 20px;}
+
+/*---------Projects---------  */
+.project-grid{ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  overflow: hidden;}
+
+
+
+/* PROJECT SECTION CHANGED */
+
+
+.project-grid{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.project-item{
+  border-radius: 5px;
+  border: black;
+  margin: 20px;
+  text-align: left;
+  font-size: 20px;
+  display: flex;
+  border-radius: 20px;}
+
+
+
+@media(min-width: 1315px){
+  .project-item{ width: 1000px;}}
+
+  @media(min-width: 1446px){ 
+  .project-item-text{width: 1200px !important;}}
+  
+@media(min-width: 1446px){
+  .project-item{ width: 1400px;}}
+
+.project-item-text{margin-left: 20px; 
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow:  0 0 10px rgba(0,0,0,1.5);
+}
+
+#project-item-img{border-radius: 20px; min-width: 300px; height: 300px; box-shadow: 0 0 10px rgba(0,0,0,1.5); object-fit: cover;}
+
+@media(max-width: 1250px){#project-item-img{min-width: 200px; height: 200px;}}
+@media(max-width: 980px){#project-item-img{min-width: 120px; width: 120px; height: 120px; margin-bottom: 0px;}
+  .skills-container{padding: 0px;}
+ .skill-box > .skill-item{font-size: 15px; height: 100%; width: length; padding: 6px;}
+.project-item-text > .skill-box > p{font-size: 5px;} 
+ project-subheader{ font-size: 5px;} 
+}
+
+@media(max-width: 980px){
+/*  PROJECT SECTION SCREEN SIZES  */
+ .project-item{flex-direction: column; padding: 5px; justify-content: center;}
+ #project-text-media > p{ 
+/*  SKILL BOX FONT AT @Media   */
+   font-size: 14px; margin: 0px; margin-left: -20px; margin-bottom: 20px; } 
+  
+  #project-text-media > .skill-box{ 
+/*  SKILL BOX FONT AT @Media   */
+   font-size: 10px; } 
+  
+  #project-item-img{margin-top: 10px; margin-bottom: 10px;}
+  .project-item{align-items: center; padding-top: 10px;}
+  
+  #pi-superleap{background: linear-gradient(#1b1e1f, #2a2d30);}
+  #pi-nasa{background: black;}
+  #pi-VR{background: #3c3c3c;}
+ 
+  .project-item{display: flex; flex-wrap: wrap; justify-content: center;}
+  .project-item-text{margin-left: 0px;}
+}
+
+
+ @media(min-width: 520px){
+   #project-item-img{margin-top: 5px; margin-bottom: 10px;}}
+
+
+ @media(max-width: 680px){
+ .project-item-text{margin-left: 0px; 
+/*  shadow for bullet point p area  */
+  padding-left: 25px;
+  border-radius: 20px;
+  
+  box-shadow:  0 0 10px rgba(0,0,0,1.5);}}
+
+
+ @media(max-width: 720px){
+.project-p-wrapper > p{font-size: 15px;}
+}
+
+ @media(max-width: 520px){
+.project-item, .project-grid{padding: 0px;}}
+
+ @media(max-width: 410px){
+.project-p-wrapper > p{font-size: 12px;}
+.project-item, .project-grid{padding: 0px; margin: 4px; margin-bottom: 0px;}}
+
+
+.project-item-text > p{font-size: 16px;}
+
+.project-item-text > .skill-item{font-size: 18px; height: 20px; width: length;}
+
+project-subheader{font-style: italic; font-size: 16px;}
+
+project-header{font-weight: bold;}
+
+#btn-read-more{border-radius: 10px; transition: all 0.4s;  color: white; background: black;}
+
+#btn-read-more:hover{cursor: pointer; color: white; background: black;
+  box-shadow: 0 0 0px rgba(0,0,0,1.5);
+  box-shadow: 0 0 5px rgba(0,0,0,1.5);
+  //box-shadow: inset 0 0 5px rgba(0,0,0,1.5);
+}
+
+#btn-read-more > a{color: white; text-decoration: none;}
+
+
+
+
+
+/* ______________________________________*/
+
+/*-------------UNIVERSAL ELEMENTS-------------  */
+
+ 
+
+
+#sectionheader{font-family: 'roboto'; color: white; width: 90vw; text-align: center; padding: 5px;
+margin-left: auto; margin-right: auto; margin-top: 40px; text-transform: uppercase; background: black;
+border-radius: 20px;
+  
+  font-family: 'Montserrat'; 
+}
+
+#skillsheader{ 
+font-family: 'roboto'; color: white; text-align: center; padding: 5px;
+margin-left: auto; margin-right: auto; margin-top: 40px; text-transform: uppercase; font-family: 'Montserrat'; 
+  
+ text-shadow: 2px 2px black; 
+  
+background: black;
+border-radius: 20px;
+margin-top: 10px;
+margin-bottom: 10px;}
+
+iframe{ position: relative; width: 100vw; height: 70vw; 
+  overflow:hidden; padding-top: -140px; border: none;
+
+  position: relative; top: -70px;
+  
+}
+
+iframe-crop{display: block; width: 100%; overflow: hidden; 
+  //height:70vw;  
+  overflow:hidden;}
+
+
+#droidcrop{height:600px;}
+
+@media (max-width: 960px){iframe-crop{height:170vw;} iframe{height: 100%;} #droidcrop{height:200vw;}}
+
+/* _________________________________ */
+/*-------------Buttons-------------  */
+
+#btn-portfolio-more{background: black; color: white; border: solid white; border-radius: 10px; margin-bottom: 30px; margin-top: 10px; width: 250px; height: 50px; font-size: 20px; transition: all 0.2s;
+//background: #4a91e3;
+}
+
+#btn-portfolio-more:hover{cursor: pointer; box-shadow: 0 0px 20px rgba(0, 0, 0,0.5);
+  transform: scale(1.04); 
+  box-shadow: 0 0 5px #0094FF,
+              0 0 25px #0094FF,
+              0 0 50px #0094FF,
+              0 0 100px #0094FF;}
+
+@media(max-width:870px){
+  #btn-portfolio-more{margin-left: auto; margin-right: auto;}
+}
+
+#btn-another{background: black; color: white; border: solid white; border-radius: 10px; margin-bottom: 30px; width: 250px; height: 50px; font-size: 20px;  transition: all 0.2s;}
+
+#btn-another:hover{cursor: pointer; color: black; background: white;}
+
+.centerdiv{width: 100%; display: flex; justify-content: center;}
+
+/* __________________________________ */
+/*-------------CONTAINER-------------  */
+.container {
+ display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  overflow: hidden;
+}
+
+.skills-container, .project-container{border-radius: 20px; margin: 0px; margin-top: 0px; width:cover;}
+
+.skills-container{ padding: 0px; overflow: hidden; margin-top: 30px;}
+
+#svg2{margin: 12vw; margin-bottom: 225px; display: block; z-index: -3; position: relative; }
+
+#svg2bottom{transform: rotatex(180deg); margin: 12vw; margin-top: 130px; z-index: 0; position: relative;}
+
+
+@media(max-width: 1289px){#svg2{margin: 5vw; margin-bottom: -50px; display: block;}
+  #svg2bottom{margin-top: 240px;}
+}
+
+@media(max-width: 1042px){#svg2{margin: 5vw; margin-bottom: -40px; display: block;}}
+
+@media(max-width: 445px){#svg2{margin: 3vw; margin-bottom: -10px;}}
+
+.skills-wrapper{justify-content: center; align-items: center; display: flex; flex-wrap: wrap;}
+
+.project-container{ background: transparent; background: white; border-radius: 0px; box-shadow: none; margin: 0px; 
+  
+  background: linear-gradient(#37affc, #a3d9fe);
+  
+   // background: linear-gradient(#090327, #a3d9fe);
+
+  margin-top: -10px;}
+
+@media (max-width: 1290px){
+  .skills-container{margin: 20px;}
+}
+
+
+img{
+  height: auto;
+  width: 200px;
+}
+
+.center {
+  margin: auto;
+  width: auto;
+  padding: 1px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+
+/* _________________________________ */
+/*-------------SCROLL BAR-------------  */
+
+
+/* OLD */
+
+/* ::-webkit-scrollbar {
+width: 18px;
+}
+
+::-webkit-scrollbar-track {
+background: black;
+ 
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background:white;
+} */
+
+
+/*  NEW */
+
+
+/* width */
+::-webkit-scrollbar {
+width: 18px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: black;
+
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+//border-radius: 10px;
+  background: linear-gradient(#37affc, #a3d9fe);
+}
+
+
+@media (max-width: 1083px){
+  
+  ::-webkit-scrollbar {
+width: 0px;
+}
+ 
+  /* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 8px;
+background: transparent;
+  }}
+
+/* _______________________________ */
+/*-------------NAV BAR-------------  */
+
+
+.nav{
+  height: 42px;
+  width: 100vw;
+  flex: 100%;
+  display: flex;
+  color: white;
+  background: black;
+  box-shadow: 0 0px 10px rgba(0, 0, 0,11.5);
+  z-index: 1;
+  font-family: sans-serif;
+  margin-top: -10px;
+  margin-left: -8px;
+  padding-left: 8px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+ // margin-left: -10px;
+
+}
+// NAV NEW FIXED TO TOP
+.nav{position: fixed; top: 0px;}
+
+.nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 1;
+  display: flex;
+justify-content: center;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+   border: solid black;
+  max-width: 400px;
+    transition: all 0.4s;
+}
+
+.nav a, .nav span {
+  display: block;
+  font-size: 100%;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.nav li:hover {
+ border: solid white;
+  transition: all 0.4s;
+}
+
+.nav span:hover, .nav a:hover {
+    
+}
+
+  
+  
+@media (max-width: 550px){
+
+  titleimg > .centerbar > img{
+    width: 50%;
+  }
+.nav {
+  overflow: auto;
+  overflow-y: hidden;
+  overflow-x: visible;
+  white-space: nowrap;
+  width: 100vw;
+  }
+  
+ .nav > ul > li >a{ 
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  line-height: 0.2;}
+    
+.nav li:hover {
+ background-color: black;
+ color: white;}
+  
+ .nav a:hover {
+  color: white;}
+
+
+  article{overflow: hidden;}}
+
+/*-------------Nav Body-------------  */
+.nav-body{display: flex; flex-wrap: wrap; width: 100%; height: cover;}
+
+.nav-body ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.nav-body li {
+font-size: 18px; color: white; background: black; margin-left: 10px; padding: 10px; font-weight: bold; height: 20px; width: auto; margin-bottom: 10px; box-shadow: 0 0px 10px rgba(0, 0, 0,0.5); border-radius: 5px;}
+
+.nav-body li{border: 1px solid white; padding-top: 2px;}
+
+.nav-body li:hover{background: #fefeff;}
+.nav-body li:hover a{color: black;}
+
+.nav-body a, .nav-body span {
+  display: block;
+  font-size: 100%;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white; 
+  //background: yellow;
+}
+
+// .nav-body li:hover {
+//  border: solid white;
+
+// }
+
+hr{border-top: 1px solid #fefeff; width: 60vw;}
+
+.nav-anchor{background: green; display: block; position: absolute; margin-top: -100px;}
+
+
+
+// fixed nav body
+
+// #fixed-nav-body{position: fixed; margin-top: -40px; z-index: 5;}
+// @media(max-width: 1175px){#fixed-nav-body{display: none;}}
+
+/* _______________________________ */
+/*-------------FOOTER-------------  */
+
+footer{background: #2b2c30; height: 100px; margin: 0px; padding: 50px;  padding-top: 0px; color: white; display: flex; flex-direction: row; z-index: 4; box-shadow:  0 0 20px rgba(0,0,0,0.5); border-radius: 20px;}
+
+ h3 {color: white; font-size: 30px; margin-bottom: 0px;}
+
+footer > p{color: #eaeaea; font-size: 15px;}
+
+.h3-container{width: 200px;}
+
+.footer-button-container{ width: 100%;
+  height: 100%; border-radius: 100px; margin-left: 100px; padding: 10px; padding-top: 15px; margin-top: 15px; box-shadow: inset 0 0 10px rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center;}
+
+.footer-button-container > .nav-body > ul > li{background: black; border: none; font-size: 15px; box-shadow: none; box-shadow: inset 0 0 10px rgba(0,0,0,0.5); padding-top: 4px;}
+
+.footer-button-container > .nav-body > ul > li > a:hover{color: white; color: #37affc;}
+
+.footer-button-container > .nav-body li:hover a{color: white; text-shadow: 0 0px 600px, 0 0 20px, 0 0 6px #37affc, 0 0 0px #37affc, 0 0 600px black; color: #37affc;}
+
+@media(max-width: 1216px){footer{display: flex; flex-direction: column; align-items: center; height: 100%;}
+ .footer-button-container{margin-left: 0px}
+
+  .h3-container{width: auto; text-align: center;}}
+
+@media(max-width: 550px){footer{padding: 2px;} .footer-button-container{padding: 0px; box-shadow: none;}}
+
+/* _______________________________ */
+/*-------------OTHER-------------  */
+
+/* RGB */
+
+.rgb::after {
+  content:"";
+  background: linear-gradient(45deg,
+  #ff0000 0%, 
+  #ff9a00 10%,
+  #d0de21 20%,
+  #4fdc4a 30%, 
+  #3fdad8 40%,
+  #2fc9e2 50%, 
+  #1c7fee 60%, 
+  #5f15f2 70%, 
+  #ba0cf8 80%, 
+  #fb07d9 90%, 
+  #ff0000 100%  )
+  repeat 0% 0% / 300% 100%;
+  position: absolute;
+  inset: -3px;
+  border-radius: 16px;
+  filter: blur(1px);
+  transform: translateZ(-1px);
+  z-index: -1;
+  animation: rgb 6s linear infinite;
+  height: 6px;
+  margin-top: 295px;
+transition: all 0.4s;
+} 
+
+// @media (max-width:805px) {
+// .rgb::after{margin-top: 365px;}}
+
+ @media (max-width:625px) {
+ .rgb::after{margin-top: 385px;}}
+
+@media (max-width:445px) {
+.rgb::after{margin-top: 60px;}
+.nav li:hover {
+ border: solid black;}
+  header2{font-size: 30px;}
+  header3{font-size: 20px; margin-bottom: 0px;}
+  .skills-container, .project-container{padding: 0px; margin: 0px;}}
+
+@keyframes rgb {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.rgb::after {
+  border-radius: 0px;
+  filter: blur(0px);
+  transform: translateZ(-1px); /*or z-index */
+  animation: rgb 6s linear infinite;
+}
+
+
+
+/* _______________________________ */
+/*-------------Party Mode-------------  */
+
+#animation-text{transition: 0.5s all; 
+animation: shadow-animation-h2 3.5s ease-in-out;}
+
+#animation-text:hover{cursor: pointer; transition: 0.5s all; 
+ text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fe3a80, 0 0 0.5em #fe3a80, 0 0 0.1em #fe3a80, 0 10px 3px #fe3a80;}
+
+#animation-border:hover{cursor: pointer; transition: 0.5s all; 
+animation: shadow-animation-p 3.5s ease-in-out infinite;}
+
+
+
+
+@keyframes shadow-animation-h2{
+42% { text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fe3a80, 0 0 0.5em #fe3a80, 0 0 0.1em #fe3a80, 0 10px 3px #fe3a80;}}
+
+
+@keyframes shadow-animation-p {
+42% {box-shadow:0px 0px 40px 10px #fe3a80; }}
+
+
+/* _______________________________ */
+/*-------------Nuke Mode-------------  */
+
+
+/* _______________________________ */
+/*-------------Extra Screen sizes-------------  */
+
+
+@media(min-width: 1290px){
+ header2{font-size: 90px;}
+  .skills-container{max-width: 1000px; margin-left: auto; margin-right: auto;}
+  .rgb::after{margin-top: 400px;}
+}
+
+
+
+
+/* FEATURED SITES CAROSEL */
+
+
+.website-gallery{display: flex; flex-wrap: wrap; justify-content: center;}
+
+
+website-section{margin-bottom: 20px;} 
+
+@media(max-width: 1020px){
+interactive-section{display: none;}}
+
+@media(max-width: 660px){
+  .website-gallery{padding: 0px; flex-direction: row;}}
+
+@media(max-width: 460px){
+  .project-container, website-gallery{margin-top: -10px;}}
+
+
+
+/* NEW STUFF ------------------------------------------------ */
+
+
+.portfolio-item-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+  margin: 0px;
+}
+
+.portfolio-item > .item-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 400px;
+    min-width: 340px;
+    min-height: 100vw;
+    text-align: center;
+    background-color: #fff;
+    grid-gap: 40px;
+    overflow: hidden;
+    font-family: 'Roboto';
+}
+
+.portfolio-item{
+    grid-gap: 40px;
+    margin: 10px;
+    background: white;
+    overflow: hidden;
+    height: 360px;
+    max-width: 400px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0,0.5);
+  transition: all 0.2s; border-radius: 20px;
+}
+
+.portfolio-item:hover{
+  box-shadow: 0 0px 20px rgba(0, 0, 0,0.5);
+  transform: scale(1.04); 
+}
+
+.portfolio-item:hover{transform: translate3d(0px, -20px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(-1deg, 1deg); transform-style: preserve-3d;} 
+
+.portfolio-item > img{
+  max-width: 400px;
+  min-width: 340px;
+  width: 400px;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+
+
+
+
+
+
+
+@media(max-width: 895px){
+  .portfolio-item{width: 300px; height: 300px;}
+  
+.portfolio-item > img{
+  min-width: 300px;
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+  
+    .portfolio-item > .item-caption {min-width: 40px; padding-top: 12px;}
+}
+
+
+
+@media(max-width: 640px){
+  .portfolio-item{width: 200px; height: 200px; font-size: 12px; padding: 0px;}
+  
+.portfolio-item > img{
+  min-width: 0px;
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+  
+  .portfolio-item > .item-caption {min-width: 40px; padding-top: 12px;}
+  
+  
+}
+
+
+
+@media(max-width: 495px){
+  
+  .portfolio-item-container{padding: 0px;}
+  .portfolio-item{width: 160px; height: 160px;}
+  
+.portfolio-item > img{
+  min-width: 0px;
+  width: 160px;
+  height: 100px;}}
+
+
+#photo-portfolio > img{width: 100%;}
+#photo-portfolio{background: #eaeaea;}
+
+
+@media(max-width: 375px){
+.portfolio-item{width: 140px; height: 150px; margin: 6px;}
+.item-caption{font-size: 10px; }
+.portfolio-item > img{
+  min-width: 0px;
+  margin-bottom: -7px;
+  width: 140px;
+  height: 100px;}}
+
+
+
+
+/* Droid Stuff  */
+
+.droid-color-box
+{
+  margin: 10px, auto;
+  padding-top: 40px;
+  padding: 0px;
+  postion: center;
+  border-radius: 80px;
+  background-image: url("https://i.pinimg.com/originals/3e/51/52/3e51529f91a760d52702fb5995a608e1.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  z-index: 0;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.droid-color-box > img{ width: auto; margin-top: -150px;
+margin-top: -100px;
+height: 640px; 
+}
+
+ .droid-color-box > .item-caption{
+  position: aboslute;
+   display: block;
+  margin-top: -140px;
+  width: 100%;
+  max-height: 30px;
+  min-width: 650px;
+  font-size: 30px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  text-align: center;
+ border: 2px solid white;
+ outline: 2px solid white;
+  
+}
+
+#figmaiframe{ display: flex;
+flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;}
+
+.iframe-wrapper{
+  //margin-top: -20px;
+  color: white;
+  display: flex; align-items: center; flex-direction: column; margin: 10px;}
+
+#emailcenter{margin-bottom: 60px;}
+#emailheight > iframe{height: 800px; border-radius: 20px;}
+
+.iframe-wrapper > h2{margin-top: 20px; font-size: 20px; text-align: center;}
+
+.iframe-wrapper > iframe{width: 600px; height: 600px; border-radius: 20px;}
+
+@media (min-width: 1350px){
+  #figmaiframe{flex-direction: row; flex-wrap: wrap;}
+  iframe{margin-left: 20px;}
+}
+
+@media (max-width: 650px){
+  .iframe-wrapper, #figmaiframe, iframe{width: 100vw;}
+.iframe-wrapper > iframe{width:80vw;}}
+.iframe-wrapper{margin-top: 10px;}
+
+
+.portfolio-item-container > a{color: black; text-decoration: none;}
+
+@media (max-width: 440px){.skills-article{padding: 4px; margin: 0px; margin-top: 0px;}
+.skill-box > .skill-item{font-size: 12px; margin: 2px;}}
+
+@media (max-width: 396px){header2{font-size: 28px;} 
+  header3{font-size: 14px; margin-bottom: 20px;}}
+
+@media (max-width: 355px){
+  header2{font-size: 20px;}
+  #sectionheader{font-size: 20px;}
+}
+
+@media(660px){footer{margin-bottom: 200px;}}
+@media(400px){footer{margin-bottom: 900px;}}  
+
+.nav{display: none;}
+  </style>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+<!--  Ideas to add  -->
+<!--  The coolest resume website you'll ever see  -->
+<!--  Activate Party  or  It's time to party--> 
+<!--  Activate Nuke  or  Nuke this page  -->
+<!--  Dude I worked so hard on this, are you seriously going to blow it up?!  -->
+  
+<!-- ------------- Nav-------------  -->
+   <div class="nav">  
+     <ul>
+<!--        <li><a href="https://codepen.io/kjkosta/full/ExELbXR">My Story</a></li> -->
+        
+       <li><a href="https://codepen.io/kjkosta/full/bGLqxvp">Resume</a></li>
+<!--        <li><a href="https://codepen.io/kjkosta/full/abYGXYJ">Contact</a></li> -->
+       
+</ul> </div> 
+  
+  
+  
+  
+<!--   
+    <div class="nav-body" id="fixed-nav-body">  
+     <ul>
+       <li><a href="#featured-site-scroll"> Featured Websites </a></li>
+       <li><a href="#design-example-scroll"> Design Examples </a></li> 
+          <li><a href="#interactive-element-scroll"> Interactive Elements</a></li> <div class="vl"></div>
+          <li><a href="#figma-design-scroll"> Figma Design </a></li>
+       <br>
+          <li><a href="#email-scroll"> HTML Email</a></li>
+          <li><a href="#project-scroll"> Projects</a></li>           
+</ul> </div> 
+   -->
+  
+  
+<!-- ------------- Header-------------  -->
+  
+<!--   <div id="particles-js"></div> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+  
+    <div class="header-container">
+      
+      <header2 id="animation-text">Hi, I'm Kris | A Next Gen <br> Web Developer </header2>
+      
+      <header3> Austin Texas based web developer /  3 years experience  </header3>
+      
+<!--       <header3> Building is my purpose and learning new skills is my passion. </header3> -->
+<!--      Game Developer, UX / UI Designer, Team Leader, Creator, Engineer, advisor      -->
+      <header3> <div class="rgb"></div></header3> 
+                </div>
+  
+  <!-- ------------- Main page-------------  -->
+       
+  
+  <div class="portfolio-container">
+    
+    
+<!--   Nav Body   -->
+      <h1 id="sectionheader">Portfolio Navigation</h1>  
+    <hr>
+    <div class="nav-body">  
+     <ul>
+       <li><a href="#featured-site-scroll"> Featured Websites </a></li>
+       <li><a href="#design-example-scroll"> Design Examples </a></li> 
+          <li><a href="#interactive-element-scroll"> Interactive Elements</a></li> <div class="vl"></div>
+          <li><a href="#figma-design-scroll"> Figma Design </a></li>
+       <br>
+          <li><a href="#email-scroll"> HTML Email</a></li>
+          <li><a href="#project-scroll"> Projects</a></li>           
+</ul> </div> 
+    
+    
+    
+<!--   WEBSITES   -->
+    
+    
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#37affc" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,272C640,288,800,288,960,261.3C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" id="wave"></path></svg>
+  
+  <div class="project-container">
+ 
+     <div class="skills-wrapper">    
+  <br>
+<!-- ------------- Skills-------------  -->
+    
+    <div class="skills-container">
+      
+            <div class="skills-article">
+              <br> <br>
+   <h1 id="skillsheader"> My Skills</h1>  
+<div class="skill-box"> 
+  
+  <div class="skill-item"> HTML  </div>
+  <div class="skill-item"> CSS </div>
+  <div class="skill-item"> JavaScript </div>
+  <div class="skill-item"> ReactJS </div>
+  <div class="skill-item"> Angular </div>
+  <div class="skill-item"> Shopify </div>
+  <div class="skill-item"> WordPress </div>
+  <div class="skill-item"> Figma </div>
+  <div class="skill-item"> Adobe XD </div>
+  <div class="skill-item"> Sketch </div>
+  <div class="skill-item"> InVision </div>
+  <br>
+
+ 
+  <div class="skill-item"> CMS Systems </div>
+    <div class="skill-item"> Conversion Rate Optimization</div>
+  <div class="skill-item"> Graphic Design </div>
+  <div class="skill-item"> Adobe Suite </div>
+  <div class="skill-item"> Unity Engine </div>
+  <div class="skill-item"> Video / Photo Editing </div>
+</div> 
+
+   <br>
+         </div>
+         </div>
+    </div>
+    
+<!--  WEBSITE SECTION  -->
+      <div class="nav-anchor" id="featured-site-scroll"></div>
+    
+  <website-section>
+   <div class="centerdiv"><h1 id="sectionheader"> Featured Websites</h1></div> 
+  
+  
+ <div class="portfolio-item-container">
+
+             <!--    ITEM       -->
+          <a href="https://chargeadventures.myshopify.com/"> <div class="portfolio-item">
+                  <img src="img/chargeadventures.PNG" alt="">
+         <div class="item-caption">
+           Charge Adventures | Made For Client
+           </div>
+           </div> </a>
+         
+         
+             <!--    ITEM       -->
+          <a href="https://kametacapital.com/index.html"> <div class="portfolio-item">
+                  <img src="img/kametacapital.PNG" alt="">
+         <div class="item-caption">
+           Kameta Capital | Made For Client
+           </div>
+           </div> </a>
+      
+      
+       <!--    ITEM       -->
+          <a href="https://strikewebservices.com/"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/DAhmxhI.png">
+         <div class="item-caption">
+         Strike Web Services | Made For Client
+           </div>
+           </div> </a>
+      
+      
+        <!--    ITEM       -->
+          <a href="https://strike.services/"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/B5P0P4p.png">
+         <div class="item-caption">
+         Strike Services | Made For Client
+           </div>
+           </div> </a>
+         
+        
+            <!--    ITEM       -->
+          <a href=" http://www.relevad.com/"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/wnagyCc.jpg" alt="">
+         <div class="item-caption">
+         Relevad | Website For Client
+           </div>
+           </div> </a>
+         
+        <!--    ITEM       -->
+          <a href="https://felixautorepair.netlify.app/"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/0XXK3GU.png" alt="">
+         <div class="item-caption">
+         Felix Auto Repair | Website For Client
+           </div>
+           </div> </a>
+         
+         
+         
+         </div>
+
+    
+    
+  
+
+    </website-section>
+  <br> <br>
+       
+    <div class="nav-anchor" id="design-example-scroll"></div>
+    
+       <div class="centerdiv" ><h1 id="sectionheader"> Design Examples</h1></div> 
+    
+     
+         <div class="portfolio-item-container">
+      
+           <!--    ITEM       -->
+          <a href="https://chargeadventures.myshopify.com/pages/central-montana-elk-deer-combo-hunt"> <div class="portfolio-item">
+                  <img src="img/chargeadventureselk.PNG" alt="">
+         <div class="item-caption">
+           Charge Adventures Hunt Page | Made For Client
+           </div>
+           </div> </a>
+           
+                                <!--    ITEM       -->
+          <a href="https://www.armeddaily.com/self-defense-sweepstakes-landing-page/"> <div class="portfolio-item">
+                  <img src="img/hksweepstakes.PNG" alt="">
+         <div class="item-caption">
+           HK Self Defense Sweepstakes | Made For Client
+           </div>
+           </div> </a>
+         
+             <!--    ITEM       -->
+        <a href="https://codepen.io/kjkosta/full/ZEWGQWP"> <div class="portfolio-item">
+         <img src="https://i.imgur.com/Iy4ZKbH.png">
+         <div class="item-caption">
+Nuclear War Survival | Parallax Animation Website
+           </div>
+           </div> </a>
+         
+           <!--    ITEM       -->
+        <a href="https://codepen.io/kjkosta/full/LYQjeOj">  <div class="portfolio-item">
+                 <img src="https://i.imgur.com/2ECUFXA.png">
+         <div class="item-caption">
+           Halo Website | With Rain Animation
+           </div>
+           </div></a>
+           
+            <!--    ITEM       -->
+         <a href="https://codepen.io/kjkosta/full/mdXBaKX"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/2JUpXZE.jpg">
+         <div class="item-caption">
+           Star Wars Style Product Page
+           </div>
+           </div> </a>
+           
+          
+              <!--    ITEM       -->
+          <a href="https://codepen.io/kjkosta/full/eYeWzgB"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/Ks4PGFz.jpg" alt="">
+         <div class="item-caption">
+         Tacotopia | Made To Showcase My Skill
+           </div>
+           </div> </a>
+           
+                            <!--    ITEM       -->
+<a href="https://codepen.io/kjkosta/full/MWQERRY">  <div class="portfolio-item">
+                  <img src="https://i.imgur.com/YRV7F2a.jpg">
+         <div class="item-caption">
+           Footware Product Items | Static Elements
+           </div>
+           </div></a>
+           
+             <!--    ITEM       -->
+          <a href="https://woft.com/pages/join-w-o-f-t-nation"> <div class="portfolio-item">
+                  <img src="img/WOFTJOIN.PNG" alt="">
+         <div class="item-caption">
+           WOFT Join Form | Made For Client
+           </div>
+           </div> </a>
+      
+      
+           
+                 <!--    ITEM       -->
+<a href="https://codepen.io/kjkosta/full/GRrWQjN">  <div class="portfolio-item">
+                  <img src="https://i.imgur.com/lJBTnAr.png">
+         <div class="item-caption">
+           Steam Store Metro 2033 | With Snow Animation
+           </div>
+           </div></a>
+           
+             </div>
+    
+    
+
+    
+    
+    <!--   INTERATIVE ELEMENTS PORTFOLIO    -->
+    <div class="nav-anchor" id="interactive-element-scroll"></div>
+       <div class="centerdiv"><h1 id="sectionheader"> Interactive Element Examples</h1></div> 
+    
+    
+    
+         <div class="portfolio-item-container">
+           
+<!--    ITEM       -->
+         
+            <a href="https://codepen.io/kjkosta/full/LYOjdgj"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/sLMEZCb.png">
+         <div class="item-caption">
+         Profile Card | Using Angular
+           </div>
+           </div> </a>
+        
+        
+            <!--    ITEM       -->
+          <a href="https://codepen.io/kjkosta/full/VwQYpdO"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/2V1SRiV.png">
+         <div class="item-caption">
+         David Ruezga Law | 3D Business Card 
+           </div>
+           </div> </a>
+         
+                   <!--    ITEM       -->
+          <a href="https://codepen.io/kjkosta/full/oNpVWdr"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/X5CbawU.jpg">
+         <div class="item-caption">
+         Travel Cards | W/ Shadow & Hover Animations 
+           </div>
+           </div> </a>
+           
+           
+                   <!--    ITEM       -->
+          <a href="https://codepen.io/kjkosta/full/xxYqWzd"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/3vph6CM.png">
+         <div class="item-caption">
+         3D Navigation Bar 
+           </div>
+           </div> </a>
+           
+           
+                   <!--    ITEM       -->
+          <a href="https://codepen.io/kjkosta/full/WNdGxKV"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/pdsrh1c.png">
+         <div class="item-caption">
+         Black Jack Game | JavaScript 
+           </div>
+           </div> </a>
+           
+       
+         
+         <!--    ITEM       -->
+<!--       <a href="https://codepen.io/kjkosta/full/ZEeJyqL">    <div class="portfolio-item">
+                  <img src="https://i.imgur.com/6MQNS0Y.png">
+         <div class="item-caption">
+           Rick and Morty Assassin Business Card
+           </div>
+           </div> </a> -->
+         
+         <!--    ITEM       -->
+          <a href="https://codepen.io/kjkosta/full/RwxNwEV"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/gklxzr9.png">
+         <div class="item-caption">
+           Metric/Imperial Unit Converter | JavaScript
+           </div>
+           </div> </a>
+         
+           
+            <!--    ITEM       -->
+<!--           <a href="https://codepen.io/kjkosta/full/xxREqbY"> <div class="portfolio-item">
+                  <img src="https://i.imgur.com/h0EpQXi.png">
+         <div class="item-caption">
+         Carl Jung | Quote Generator
+           </div>
+           </div> </a>
+         
+         -->
+         
+<!--    Container end div     -->
+            </div>
+    
+      </div>   </div>
+  
+ 
+  </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#a3d9fe" fill-opacity="1" d="M0,32L48,42.7C96,53,192,75,288,106.7C384,139,480,181,576,208C672,235,768,245,864,250.7C960,256,1056,256,1152,218.7C1248,181,1344,107,1392,69.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+</svg>    
+    
+  
+  
+  
+  <!--   FIGMA DESIGN EXAMPLES   -->
+    <div class="nav-anchor" id="figma-design-scroll"></div>
+    
+    <div class="centerdiv"><h1 id="sectionheader"> Figma Mockup Examples</h1></div> 
+    
+     <div class="portfolio-container" id="figmaiframe">
+           <div class="iframe-wrapper"> <h2> Example 1</h2>
+               <iframe src="https://drive.google.com/file/d/1TlXu2X3XlOoV_zwMN56SpJoBkkyoLFew/preview" width="640" height="480">
+                 
+               </iframe> </div>
+  <div class="iframe-wrapper"> 
+    <h2> Example 2</h2>
+           <iframe src="https://drive.google.com/file/d/1s91haZSxgQVOOWZO4-UXzQbLY0wh_bTp/preview" width="640" height="480" allow="autoplay"></iframe> </div>
+       
+        <div class="iframe-wrapper"> 
+    <h2> Example 3</h2>
+           <iframe src="https://drive.google.com/file/d/12AsFGkXvMiDrKBUXcJL2qeskOW6Nubbd/preview" width="640" height="480" allow="autoplay"></iframe> </div>
+       
+ </div>
+  
+  <!-- ------------- HTML Email-------------  -->
+  
+      <div class="nav-anchor" id="email-scroll"></div>
+    <div class="centerdiv" id="emailcenter"><h1 id="sectionheader"> HTML EMAIL / GRAPHIC DESIGN</h1></div> 
+ 
+     <div class="portfolio-container" id="figmaiframe">
+       
+       <!--    Email Item     -->
+           <div class="iframe-wrapper" id="emailheight"> 
+             <iframe src="https://drive.google.com/file/d/1Tu6NqlY6p1DVdzwsYLrj1c6v7aHBRfwH/preview" width="640" height="480" allow="autoplay"></iframe> </iframe> </div>
+  
+  <!--    Email Item     -->
+           <div class="iframe-wrapper" id="emailheight"> 
+             <iframe src="https://drive.google.com/file/d/1c1q94yUJx2fWdV4jZgeUi9xrys1nepxS/preview" width="640" height="480" allow="autoplay"></iframe> </iframe> </div>
+
+<!--    Email Item     -->
+           <div class="iframe-wrapper" id="emailheight"> 
+             <iframe src="https://drive.google.com/file/d/1BxYBJMtGgzY-JEX6YJ6v6Tc_c1WMzW0k/preview" object-fit="cover" width="640" height="480" allow="autoplay"></iframe> </iframe> </div>
+
+
+<!--    Email Item     -->
+           <div class="iframe-wrapper" id="emailheight"> 
+             <iframe src="https://drive.google.com/file/d/1X0iJ7tWsQ3EswJnBRs6CnVzJ1cr-JN0c/preview" width="640" height="480" allow="autoplay"></iframe> </iframe> </div>
+
+  <!--    Email Item     -->
+           <div class="iframe-wrapper" id="emailheight"> 
+             <iframe src="https://drive.google.com/file/d/1ZfHy3jET77_skKOztWaY5JxAF-AvHBEj/preview" width="640" height="480" allow="autoplay"></iframe> </iframe> </div>
+
+<!--    Email Item     -->
+           <div class="iframe-wrapper" id="emailheight"> 
+             <iframe src="https://drive.google.com/file/d/1MLCzWT6tbPq2Wm2ZXzO3N9t6gzGk0vgr/preview" width="640" height="480" allow="autoplay"></iframe> </iframe> </div>
+
+
+
+
+
+<!--  NEW END-->
+  
+<!--    Email Item     -->
+           <div class="iframe-wrapper" id="emailheight"> 
+             <iframe src="https://drive.google.com/file/d/1VJg-q8ZYUb3T4lRDbZL7dzdBvaq4SXFo/preview" width="640" height="480" allow="autoplay"></iframe> </iframe> </div>
+  
+<!--    Email Item     -->
+    <div class="iframe-wrapper" id="emailheight"> 
+           <iframe src="https://drive.google.com/file/d/1EcvoRy8NqGqILofryAJXdenLRFYAP6qc/preview" width="640" height="480" allow="autoplay"></iframe> </div>
+  
+<!--    Email Item     -->
+    <div class="iframe-wrapper" id="emailheight"> 
+           <iframe src="https://drive.google.com/file/d/1-rQzfZ7auh-dPy5xaVPjW_vRUCpI_AOD/preview" width="640" height="480" allow="autoplay"></iframe> </div>
+ </div>
+  
+  
+
+ </div>
+  
+         
+<!-- ------------- Projects-------------  -->
+         
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#37affc" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,176C384,171,480,213,576,192C672,171,768,85,864,74.7C960,64,1056,128,1152,170.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+         
+         <div class="nav-anchor" id="project-scroll"></div>
+<div class="project-container">
+<!-- <h1 id="section-title"> Projects</h1>     -->
+  <div class="centerdiv"><h1 id="sectionheader"> Projects</h1></div>    
+          
+<!--  PROJECT SHOWCASE  -->
+   <div class="project-article">
+         
+        <div class="project-grid">
+        <div class="project-item" id="pi-superleap"> <img src="https://thumbnails.odycdn.com/optimize/s:200:0/quality:95/plain/https://thumbs.odycdn.com/869213f4c33fe70a6dc65d6d3de5486d.png" id="project-item-img" draggable= "false">
+          <div class="project-item-text" id="project-text-media">
+            
+            <div class="project-header-side">
+        <project-header>  Project SUPERLEAP </project-header>
+<br>
+<project-subheader>Unity Engine Game Developer | Technical Support Chief </project-subheader>
+ <div class="skill-box">           
+<div class="skill-item"> Unity Engine  </div>
+<div class="skill-item"> Team Collaboration </div>
+   <div class="skill-item"> Agile / Scrum </div>
+ <div class="skill-item"> Video Editing </div>
+  <div class="skill-item"> Front-end Web Development </div>    </div>      </div> 
+            <div class="project-p-wrapper">
+           
+            <p>   <b> <i> Project SUPERLEAP is a currently in development. I am responsible for the following: </i></b> <br>  <br>
+● Implemented real time fixes during production stage development.  <br>
+● Current prototype troubleshooter / QA tester. <br>
+● Collaborated on game UI. <br>
+● Agile / Scrum development cycle. <br>
+● Current website developer as well. <br> 
+● Challenging skills are learned on the spot.</p>
+            
+<button id="btn-read-more"> <a href="">Website Coming Soon </a> </button> </div>
+          </div>
+          </div>
+          
+        <div class="project-item" id="pi-nasa"> 
+               <img src="https://pbs.twimg.com/profile_images/1423767662371344386/rgiBdDME_400x400.jpg" id="project-item-img" draggable= "false"> 
+            <div class="project-item-text" id="project-text-media">
+         
+          
+        <project-header> NASA L'SPACE </project-header>
+<br>
+<project-subheader>Preliminary Design Intern </project-subheader>
+ <div class="skill-box" id="project-text-media">           
+<div class="skill-item"> PDR Creation </div>
+<div class="skill-item"> AutoCAD </div>
+   <div class="skill-item"> Team Collaboration </div>
+ <div class="skill-item"> Fast-paced Environment </div>
+    <div class="skill-item"> Strict Schedule </div>
+  <div class="skill-item"> Applied Astrophysics </div>    </div>     
+           
+           <div  class="project-p-wrapper">
+             <p id="project-text-media">   <b> <i>  NASA L'Space took place in summer of 2019. I was responsible for the following:  </i> </b> </br> </b> <br>  
+             
+              <br> ● Developed a detailed 57 page Preliminary Design Review. <br>
+● Maintained the ability to work efficiently with a tight project schedule. <br>
+● Efficiently absorbed and maintained large amounts of information relating to a wide variety of disciplined fields. <br>
+● Collaborated with a skilled team of STEM students to achieve project goals in a highly organized and timely manner. <br>
+● Created 3D AutoCAD models. <br>
+● Collaborated with a team over long distance virtually through remote video conferences. <br> ● Achieved of our goals, while maintaining and exchanging a large volume of often complicated
+information. <br>
+● Mentored by professionals from NASA.
+</p>
+
+<button id="btn-read-more"> <a href="https://codepen.io/kjkosta/full/eYVKgOa">Read more </a> </button> </div>
+          </div>
+          </div>
+          
+        <div class="project-item" id="pi-VR"> 
+           <img src="https://thumbnails.odycdn.com/optimize/s:200:0/quality:95/plain/https://thumbs.odycdn.com/0372346983c9c8a1cf8aaf681aa95d87.png" id="project-item-img"  draggable="false" >
+          
+            <div class="project-item-text" id="project-text-media">
+
+        <project-header> VR Scape </project-header>
+<br>
+<project-subheader>Website Developer | Marketing Asset Specialist | Community Content Strategist | Technical Support Chief </project-subheader>
+ <div class="skill-box">           
+<div class="skill-item"> Front-end Web Development  </div>
+<div class="skill-item"> Marketing Asset Creation </div>
+   <div class="skill-item"> Graphic Design </div>
+ <div class="skill-item"> Video Editing </div>
+  <div class="skill-item"> Multiple Roles </div>    </div>      
+           
+           <div  class="project-p-wrapper"> <p> 
+            <b> <i>  VR Scape is a currently in development. I am responsible for the following:  </i> </b> <br>  <br>
+              
+              ● Implemented real time fixes during production stage development.  <br>
+● Current prototype troubleshooter / QA tester. <br>
+● Utilized visual design skills and graphic design tools to develop marketing assets. <br>
+● Current video editor. <br>
+● Current community content strategist. <br>              
+● In charge of Website development and maintenance. <br> 
+● Challenging skills are learned on the spot.</p>
+              
+ <button id="btn-read-more"> Website Coming Soon </button> </div>
+          </div>
+          </div>
+  <br> <br>
+        </div>
+
+  </div> </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#a3d9fe" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,165.3C672,171,768,213,864,218.7C960,224,1056,192,1152,165.3C1248,139,1344,117,1392,106.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+</svg>
+
+
+            <br> <br> <br> <br>
+
+  
+  <br> <br>
+
+<footer> 
+<div class="h3-container">
+<h3> Kris Kosta </h3>
+<p> © 2022, Built and designed by Kris Kosta </p></div>
+  
+  <div class="footer-button-container">
+
+     <div class="nav-body">
+     <ul>
+       <li><a href="#featured-site-scroll"> Featured Websites </a></li>
+       <li><a href="#design-example-scroll"> Design Examples </a></li> 
+          <li><a href="#interactive-element-scroll"> Interactive Elements</a></li> <div class="vl"></div>
+          <li><a href="#figma-design-scroll"> Figma Design </a></li>
+       <br>
+          <li><a href="#email-scroll"> HTML Email</a></li>
+          <li><a href="#project-scroll"> Projects</a></li>           
+</ul> </div> 
+  </div>
+  
+</footer>
+  </body>
+  </html>
