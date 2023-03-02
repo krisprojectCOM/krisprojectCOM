@@ -1706,3 +1706,4 @@ background-color: black !important;}
 //.navbar-default{background: transparent !important; backdrop-filter: blur(2px);}
 //.navbar-default:hover{background: black !important;}
 
+.dropdown-menu>li>a:hover{color: black !important;}
