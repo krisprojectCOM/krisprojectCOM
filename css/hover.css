@@ -4142,10 +4142,10 @@
 }
 
 
-a{text-decoration: none; display: inline-block; font-family: 'Helvetica', 'Arial', sans-serif;
+a{text-decoration: none; display: inline-block; font-family: 'Arial', sans-serif !important;
     padding: 20px; background: #e8e4e4; color: black; margin: 5px;} 
 
-h2{font-family: 'Helvetica', 'Arial', sans-serif;}
+h2{font-family: 'Helvetica', 'Arial', sans-serif !important;}
 
 #h2new{text-align: center;}
 main{background: #99B2DD;}
