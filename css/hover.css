@@ -4145,4 +4145,7 @@
 a{text-decoration: none; display: inline-block;
     padding: 20px; background: #99B2DD; color: black; margin: 5px;} 
 
-/*# sourceMappingURL=hover.css.map */
+h2{font-family: 'Helvetica', 'Arial', sans-serif;}
+
+#h2new{text-align: center;}
+
