@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Product Card</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+
+body{display: flex; justify-content: center; background: black; padding-top: 80px; font-family: "Roboto", "Helvetica", sans-serif;}
+
+.card-wrapper{min-width: 350px;width: 350px; height: 550px; background: white; border-radius: 20px; overflow: hidden; margin-right: 20px;}
+
+.card-cover{background-image:url(""); background-size: cover; height: 550px; 
+ background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,
+#7b876e 100%);
+   
+}
+p, h2{margin-left: 30px; margin-right: 30px;}
+h2{}
+h3{position: absolute; margin-top: -45px; margin-left: 280px;}
+#manufacturer, #manufacturer2{width: 80px; margin: 20px;}
+#product, #product2{width: 300px; margin-top: 0px; position: absolute; margin-left: 20px;}
+
+.card-btn{display: flex; flex-direction: column; align-items: center; margin-top: 290px;}
+
+button{border-radius: 10px; width: 200px; height: 40px; }
+button:hover{cursor: pointer;}
+a{margin-top: 5px; color: white;}
+
+#product{margin-top: -10px;}
+
+#cover2{ background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fbcf88 120%);}
+
+#manufacturer2{margin-top: 10px; margin-bottom: 10px; width: 60px;}
+
+#product2{ width: 370px; margin-left: -10px; margin-top: 0px;}
+//#a2{color: black;}
+
+#cover3{ background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, 
+#668740 120%);}
+
+#card-btn3{margin-top: 285px;}
+
+
+@media(max-width: 1120px){body{flex-direction: column; flex-wrap: wrap; align-items: center; padding-bottom: 300px;}
+  .card-wrapper{margin-top: 10px;}}
+
+
+</style>
+<script src=""></script>
+<body>
+
+   <!-- Hiking shoes card 3 -->
+  <div class="card-wrapper">
+ <div class="card-cover" id="cover3">
+   <img src="img-footware/nikelogo.png" id="manufacturer" draggable="false"> <h3> $120 </h3> 
+   <h2>Nike Air Max 270 Volt </h2> 
+   <p> The runner’s engineered mesh upper is coated in black, while volt is seen on the underneath.</p>
+   
+ <img src="img-footware/shoe1.png" id="product2" draggable="false">
+     <div class="card-btn" id="card-btn3">
+ <button> Add to cart</button>
+       <a href="" id="a2"> View Product</a>
+</div>
+</div>
+</div>
+
+<!-- Hiking shoes card 1 -->
+<div class="card-wrapper">
+ <div class="card-cover">
+   <img src="img-footware/cabelaslogo.png" id="manufacturer" draggable="false"> 
+   
+   <h3> $50 </h3> 
+   <h2>ActiveTrail Hiking Boots </h2> 
+   <p> GORE-TEX lining, nubuck leather and mesh upper, abrasion resistant toe and heal bumpers, EVA Midsole. </p>
+<!--    
+ <img src="https://www.nicepng.com/png/full/70-703898_hiking-shoes-png.png" id="product"> -->
+   
+    <img src="img-footware/shoe2.png" id="product" draggable="false">
+   
+     <div class="card-btn">
+ <button> Add to cart</button>
+       <a href=""> View Product</a>
+</div>
+</div>
+</div>
+  
+  
+  <!-- Yeezy shoes card 2 -->
+  <div class="card-wrapper">
+ <div class="card-cover" id="cover2">
+   <img src="img-footware/Adidas_Logo.svg" id="manufacturer2" draggable="false"> <h3> $250 </h3> 
+   <h2>Yeezy Boost 350 V2 </h2> 
+   <p> Features a tonal black look that's offset by red "SPLY-350" messaging on the side panel. </p>
+   
+ <img src="img-footware/shoe3.png" id="product2" draggable="false">
+     <div class="card-btn" id="card-btn2">
+ <button> Add to cart</button>
+       <a href="" id="a2"> View Product</a>
+</div>
+</div>
+</div>
+  
+  
+ 
+
+</body>
+</html>
